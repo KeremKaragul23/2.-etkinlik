@@ -1,0 +1,17 @@
+ortalama = float(input("Öğrencinin ortalamasını giriniz: ")) # 
+zayif_sayisi = int(input("Öğrencinin zayıf ders sayısını giriniz: ")) 
+
+if zayif_sayisi > 0:
+    if ortalama >= 50:
+        print("Durum: Sınıfı geçer.")
+    elif 25 <= ortalama < 50:
+        print("Durum: Ortalama yükseltme sınavlarına girmesi gerekir.")
+    else: 
+        print("Durum: Sınıfı tekrar etmesi gerekir.")
+else:
+    if ortalama >= 85:
+        print("Durum: Takdir Belgesi takdim edilir!")
+    elif 70 <= ortalama < 85:
+        print("Durum: Teşekkür Belgesi takdim edilir.")
+    else:
+        print("Durum: Sınıfı geçti (Belge alamadı).")
